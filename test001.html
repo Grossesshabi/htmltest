@@ -20,34 +20,38 @@ body {
 
 /* Style the header */
 header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
+  background-color: #2e7bcf;
+  padding: 8px;B
+  text-align: left;
+  font-size: 25px;
   color: white;
+  height: 120px;
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 30%;
-  height: 2000px; /* only for demonstration, should be removed */
-  background: #ccc;
+  width: 20%;
+  height: 4000px; /* only for demonstration, should be removed */
+  background: rgb(158, 235, 71);
   padding: 20px;
+  color:black
+  font-size:20px;
 }
 
 /* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
 
 article {
   float: left;
-  padding: 20px;
-  width: 70%;
+  padding: 30px;
+  width: 80%;
   background-color: #f1f1f1;
-  height: 2000px; /* only for demonstration, should be removed */
+  height: 4000px; 
+  line-height: 40px;
+  font-size:25px;
+  color:black;
+;
+  /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -68,9 +72,7 @@ section::after {
 </style>
 </head>
 <body>
-
 <h2>张量</h2>
-<a href="https://github.com/Grossesshabi/htmltest/blob/main/test001.html"> Go back to code </a>
 <header>
   <h2>张量</h2>
 </header>
@@ -78,20 +80,22 @@ section::after {
 <section>
   <nav>
     <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
+      <li><a href="#">Galois</a></li>
+      <li><a href="#">Abel</a></li>
+      <li><a href="#">Liouville</a></li>
     </ul>
   </nav>
   
   <article>
-
 <p>
   $$
       T(V):=\bigoplus_{i\geq 1}V^{\otimes i}.
   $$
     </p>
 <h1 id="galois-theory-i">Galois Theory I</h1>
+<p>
+  偏序中“偏”字的直观含义是，偏序关系不要求对所有的有序对都定义，而一般只需对部分元素定义集合。有时也称部分定义集合中的有序对中两个元素为 <b>可比较的</b>。
+  </p>
 <p>Galois theory is an interesting mathematical topic. The theory has a
 very elegant structure,  and it is the starting point of many aspects of
 modern number theory. However, it looks quite formidable for most
@@ -131,7 +135,7 @@ form? For example, what is the `closed form’ of $ $?</p>
 denominator. The solution is given by using the ‘well known formula’: $
 (a+b)(a-b)=a<sup>2-b</sup>2$. Multiply $ 1-$ on both numerator and
 denominator, we find that:</p>
-<p>$ = = =-1+$</p>
+<p>\(a^b=c\)</p>
 <p>It turns out that the result is still of the form $ a+b<span
 class="math inline">.<em>A</em><em>n</em><em>d</em><em>t</em><em>h</em><em>e</em><em>g</em><em>e</em><em>n</em><em>e</em><em>r</em><em>a</em><em>l</em><em>c</em><em>o</em><em>n</em><em>c</em><em>l</em><em>u</em><em>s</em><em>i</em><em>o</em><em>n</em><em>i</em><em>s</em><em>t</em><em>h</em><em>a</em><em>t</em>, <em>t</em><em>h</em><em>e</em><em>s</em><em>e</em><em>t</em><em>o</em><em>f</em><em>n</em><em>u</em><em>m</em><em>b</em><em>e</em><em>r</em><em>s</em><em>o</em><em>f</em><em>t</em><em>h</em><em>e</em><em>f</em><em>o</em><em>r</em><em>m</em></span>
 a+b,a,b$ is closed under the addition, subtraction, multiplication, and
@@ -172,4 +176,3 @@ class="math inline"><em>x</em><em>σ</em>(<em>x</em>) ∈ ℚ</span>.</p>
 
 </body>
 </html>
-    
