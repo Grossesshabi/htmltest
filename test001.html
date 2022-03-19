@@ -35,7 +35,7 @@ nav {
   height: 4000px; /* only for demonstration, should be removed */
   background: rgb(158, 235, 71);
   padding: 20px;
-  color:black
+  color:black;
   font-size:20px;
 }
 
@@ -87,11 +87,32 @@ section::after {
   </nav>
   
   <article>
-<p>
+  <p>
+        <script type="text/tikz">
+            \begin{tikzpicture}
+                \centering
+                \draw[red,->] (0,0)--(1,2);
+                \draw[->] (2,0.5)--(4,1);
+                \draw[->] (0,0)--(3,2.5);
+                \draw[->] (0,0)--(5,3);
+                \draw[->] (0,0)--(5,1.25);
+                \draw[dashed] (1,2)--(5,3);
+                \draw[dashed] (5,3)--(4,1);
+                \draw[dashed] (2,.5)--(3,2.5);
+                \draw[blue,->] (0,0)--(2,0.5);
+                \node(p0) at (0,-0.2) {$0$};
+                \node(p1) at (1,1.8) {$v$};
+                \node(p2) at (2,0.3) {$w$};
+                \node(p3) at (4,0.8) {$2w$};
+                \node(p4) at (3,2.1) {$v+w$};
+                \node(p5) at (5,2.6) {$v+2w$};
+                \node(p6) at (5,1.05) {$2.5w$};
+        \end{tikzpicture}
+    </script>
   $$
       T(V):=\bigoplus_{i\geq 1}V^{\otimes i}.
   $$
-    </p>
+   </p>
 <h1 id="galois-theory-i">Galois Theory I</h1>
 <p>
   偏序中“偏”字的直观含义是，偏序关系不要求对所有的有序对都定义，而一般只需对部分元素定义集合。有时也称部分定义集合中的有序对中两个元素为 <b>可比较的</b>。
