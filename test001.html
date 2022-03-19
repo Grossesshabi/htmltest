@@ -7,6 +7,8 @@
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
 </script>
+<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
 <style>
 * {
   box-sizing: border-box;
@@ -88,6 +90,22 @@ section::after {
   $$
       T(V):=\bigoplus_{i\geq 1}V^{\otimes i}.
   $$
+    \begin{tikzpicture}
+          \useasboundingbox (-4,-4) rectangle (4,4);
+          \coordinate[] (M) at (2,2);
+          \node at (0,0)
+                {
+                \ytableausetup{mathmode,boxsize=2em}
+                \begin{ytableau}
+                            e^1_1&e^1_2\\
+                            e^2_1&e^2_2\\
+                            e^3_1&e^3_2&e^3_3\\
+                            e^4_1&e^4_2&e^4_3 \\
+                            e^5_1&e^5_2 & e^5_3& e^5_4& e^5_5  
+                        \end{ytableau}
+                };
+                \node at (1.5,2) {$Im(N^5)=$零空间};
+\end{tikzpicture} 
   </p>
     <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
   </article>
